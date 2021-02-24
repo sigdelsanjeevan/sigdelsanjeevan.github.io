@@ -1,0 +1,55 @@
+body {
+	background-color: #f1ffca59;
+	font-family: Corbel;
+	font-size: 16px;
+}
+
+.good-attribute {
+	font-family: Tahoma;
+	font-size: 20px;
+	color: green;
+}
+
+.okay-attribute {
+	font-family: Tahoma;
+	font-size: 20px;
+	color: blue;
+}
+
+.bad-attribute {
+	font-family: Tahoma;
+	font-size: 20px;
+	color: #a80d02;
+}
+
+.current {
+	font-family: Tahoma;
+	font-size: 16px;
+	color: green;
+}
+
+
+h3 {
+	font-family: Calibri;
+	font-size: 18px;
+}
+
+.name {
+ font-family: Impact;
+ font-size: 25px;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: orange;
+}
+
+dt {
+	font-family: 'Times New Roman';
+	font-size: 18px;
+	color: gray;
+}
+
