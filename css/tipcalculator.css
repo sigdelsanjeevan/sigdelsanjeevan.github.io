@@ -1,0 +1,27 @@
+body {
+	margin: auto;
+	width: 60%;
+	font-family: "Century Gothic", sans-serif;
+}
+
+h1 div {
+	font-size: 50px;
+}
+
+input {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	height: 30px;
+	font-size: 25px;
+}
+
+button {
+	height: 35px;
+	width: 150px;
+	font-size: 17px;
+}
+
+label, p{
+	font-size: 22px;
+}
+
