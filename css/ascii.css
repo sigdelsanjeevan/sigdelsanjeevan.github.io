@@ -1,0 +1,40 @@
+body {
+	background-color: #CCCCFF;
+	font-size: 14pt;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 32pt;
+	margin: 0;
+}
+
+#content {
+	text-align: center;
+}
+
+body textarea {
+	height: 400px;
+	font: 12pt monospace;
+	width: 90%;
+	font-weight: bold;
+}
+
+fieldset {
+	display: inline-block;
+	border: 5px solid black;
+	height: 50px;
+	font-size: 20px;
+}
+
+button {
+	height: 25px;
+	width: 65px;
+}
+
+.validators {
+	float: right;
+	opacity: 75%;
+}

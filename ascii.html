@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <meta name="referrer" content="origin-when-cross-origin"> -->
+	<title>ASCII Animation</title>
+	<link rel="stylesheet" type="text/css" href="css/ascii.css">	
+	<script src="js/animations.js"></script>
+	<script src="js/ascii.js"></script>
+</head>
+<body>
+	<div id="content">
+		<h1>CS472: ASCII Animation Viewer</h1>
+		<textarea rows="20" cols="80" id="mytextarea"></textarea>
+		<div id="inputs">
+			<fieldset>
+				<legend>Play Controls:</legend>
+				<button id="startbutton">Start</button>
+				<button id="stopbutton">Stop</button>
+			</fieldset>
+
+			<fieldset>
+				<legend>Animation:</legend>
+				<select id="animation">
+					<option id="blank" value="BLANK">Blank</option>
+					<option id="custom" value="CUSTOM">Custom</option>
+					<option id="exercise" value="EXERCISE">Exercise</option>
+					<option id="juggler" value="JUGGLER">Juggler</option>
+					<option id="bike" value="BIKE">Bike</option>
+					<option id="dive" value="DIVE">Dive</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Size:</legend>
+				<select id="animationsize">
+					<option value="7pt">Tiny</option>
+					<option value="10pt">Small</option>
+					<option value="12pt" selected>Medium</option>
+					<option value="16pt">Large</option>
+					<option value="24pt">Extra Large</option>
+					<option value="32pt">XXL</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Speed:</legend>
+				<input type="checkbox" name="turbo" id="turbo" />
+				<label for="turbo">Turbo</label>
+			</fieldset>
+		</div>
+	</div>
+	<div class="validators">
+
+		<a href="https://validator.w3.org/check/referer" referrerpolicy="no-referrer-when-downgrade"><img class="validator" src="img/w3html.png" alt="Validate"></a><a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="no-referrer-when-downgrade"><img class="validator" src="img/w3css.png" alt="Validate"></a>
+	</div>
+</body>
+</html>
