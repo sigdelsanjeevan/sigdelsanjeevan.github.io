@@ -19,6 +19,8 @@ function endGame() {
 		$(".boundary").addClass("youlose");
 		$("#status").text("Oh no! You lost 😭");
 		gameStatus = false;
+		var x = document.getElementById("audio"); 
+		x.play(); 
 	}
 }
 
