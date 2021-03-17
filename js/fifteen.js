@@ -7,7 +7,21 @@ function pageLoad() {
     var myCheck = "hehe";
 
     var emptySpace = { x : "300", y : "300" };
-    $("#shufflebutton").click(shuffle);
+    $("#shufflebutton").click(function (){
+        let random = 100 + Math.floor(Math.random() * 100) ;
+        for(let i = 0; i<random; i++){
+            let movableDivs = [];
+            $(".puzzlepiece").wrap(function(){
+               if($(this).hasClass("movablepiece")){
+                movableDivs.push($(this));
+            }
+        });
+            let random = Math.floor(Math.random()*movableDivs.length);
+            if(movableDivs[random]){
+               movePieces(movableDivs[random]);
+           }
+       }
+   });
 
     init();
     updateMovable();
@@ -37,21 +51,6 @@ function pageLoad() {
         }
     }
 
-    function shuffle(){
-        let random = 100 + Math.floor(Math.random() * 100) ;
-        for(let i = 0; i<random; i++){
-            let movableDivs = [];
-            $(".puzzlepiece").wrap(function(){
-               if($(this).hasClass("movablepiece")){
-                movableDivs.push($(this));
-            }
-        });
-            let random = Math.floor(Math.random()*movableDivs.length);
-            if(movableDivs[random]){
-               movePieces(movableDivs[random]);
-           }
-       }
-   }
 
    function startPlaying() {
     $(document).on('click', '#puzzlearea div.movablepiece', function(){
